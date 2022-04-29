@@ -663,7 +663,17 @@
         "space", 
         "horse", 
         "foggy",
+		"dummy",
 		"eagle", /*DUDELE Dictionary begins*/
+        "madam",
+        "alien",
+        "award",
+        "mount",
+        "cream",
+        "trial",
+        "first",
+        "movie",
+        "money",  /*DUDELE Dictionary ends*/      
         "taxes", 
         "train", 
         "music", 
@@ -775,13 +785,13 @@
 	var todaysdate = new Date();
 	var wordlength = Da(todaysdate).length; 
 	if (wordlength <= 5){
-		var borderradius = 50;
+		var borderradius = 25;
 	}
 	else if (wordlength == 6){
 		var borderradius = 25;
 	}	
 	else if (wordlength >= 7){
-		var borderradius = 0;
+		var borderradius = 25;
 	}		
     k.innerHTML =
       "\n<style>\n  :host {\n    display: inline-block;\n  }\n  .tile {\n    width: 100%;\n    display: inline-flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n    line-height: 2rem;\n    font-weight: bold;\n    vertical-align: middle;\n    box-sizing: border-box;\n    color: var(--tile-text-color); \n    text-transform: uppercase; \n    border-radius:"+borderradius+"%;\n    user-select: none;\n  }\n  .tile::before {\n    content: '';\n    display: inline-block;\n    padding-bottom: 100%;\n  }\n\n  /* Allow tiles to be smaller on small screens */\n  @media (max-height: 600px) {\n    .tile {\n      font-size: 1em;\n      line-height: 1em;\n    }\n  }\n\n  .tile[data-state='empty'] {\n    border: 2px solid var(--color-tone-4);\n  }\n  .tile[data-state='tbd'] {\n    background-color: var(--color-tone-7);\n    border: 2px solid var(--color-tone-3);\n    color: var(--color-tone-1);\n  }\n  .tile[data-state='correct'] {\n    background-color: var(--color-correct);\n  }\n  .tile[data-state='present'] {\n    background-color: var(--color-present);\n  }\n  .tile[data-state='absent'] {\n    background-color: var(--color-absent);\n  }\n\n  .tile[data-animation='pop'] {\n    animation-name: PopIn;\n    animation-duration: 100ms;\n  }\n\n  @keyframes PopIn {\n    from {\n      transform: scale(0.8);\n      opacity: 0;\n    }\n\n    40% {\n      transform: scale(1.1);\n      opacity: 1;\n    }\n  }\n  .tile[data-animation='flip-in'] {\n    animation-name: FlipIn;\n    animation-duration: 250ms;\n    animation-timing-function: ease-in;\n  }\n  @keyframes FlipIn {\n    0% {\n      transform: rotateX(0);\n    }\n    100% {\n      transform: rotateX(-90deg);\n    }\n  }\n  .tile[data-animation='flip-out'] {\n    animation-name: FlipOut;\n    animation-duration: 250ms;\n    animation-timing-function: ease-in;\n  }\n  @keyframes FlipOut {\n    0% {\n      transform: rotateX(-90deg);\n    }\n    100% {\n      transform: rotateX(0);\n    }\n  }\n</style>\n<div class=\"tile\" data-state=\"empty\" data-animation=\"idle\"></div>\n";
@@ -1678,11 +1688,11 @@
 	//enabling the Archive Game Link
     Sa.innerHTML =
 
-    '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  #privacy-policy,\n  #copyright {\n    text-align: left;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Hard Mode</div>\n          <div class="description">Any revealed hints must be used in subsequent guesses</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Dark Theme</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">High Contrast Mode</div>\n          <div class="description">For improved colour vision</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Feedback</div>\n        </div>\n        <div class="control">\n          <a href="mailto:geowordle@gmail.com?subject=Feedback" title="geowordle@gmail.com">Email</a> |\n          <a href="https://twitter.com/DudeleGame" target="blank" title="@DudeleGame">Twitter</a>\n          \n        </div>\n      </div>\n    </section>\n  \n  </div>\n  <div id="footnote">\n    <div>\n      <div id="copyright">Powered by code from the original <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank">Wordle</a></div>\n    </div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n';
+    '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  #privacy-policy,\n  #copyright {\n    text-align: left;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Hard Mode</div>\n          <div class="description">Any revealed hints must be used in subsequent guesses</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Dark Theme</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">High Contrast Mode</div>\n          <div class="description">For improved colour vision</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Feedback</div>\n        </div>\n        <div class="control">\n          <a href="mailto:dudelegame@gmail.com?subject=Feedback" title="dudelegame@gmail.com">Email</a> |\n          <a href="https://twitter.com/DudeleGame" target="blank" title="@DudeleGame">Twitter</a>\n          \n        </div>\n      </div>\n    </section>\n  \n  </div>\n  <div id="footnote">\n    <div>\n      <div id="copyright">Powered by code from the original <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank">Wordle</a></div>\n    </div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n';
 
 
 
-/*       '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  #privacy-policy,\n  #copyright {\n    text-align: left;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Hard Mode</div>\n          <div class="description">Any revealed hints must be used in subsequent guesses</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Dark Theme</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">High Contrast Mode</div>\n          <div class="description">For improved colour vision</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Feedback</div>\n        </div>\n        <div class="control">\n          <a href="mailto:geowordle@gmail.com?subject=Feedback" title="geowordle@gmail.com">Email</a> |\n          <a href="https://twitter.com/DudeleGame" target="blank" title="@DudeleGame">Twitter</a>\n          \n        </div>\n      </div>\n    </section>\n  <section> \n      <div class="setting">\n        <div class="text">\n          <div class="title">Dudele Archive</div>\n  <div class="description">Catch up in case you missed a daily word</div>\n       </div>\n        <div class="control">\n          <a href="https://dudele.github.io/archive/"target="blank">archive.dudele.in</a>\n        </div>\n      </div>\n </section><section> \n      <div class="setting">\n        <div class="text">\n          <div class="title">Submit Words</div>\n  <div class="description">Contribute to the Dudele Word list</div>\n       </div>\n        <div class="control">\n          <a href="https://docs.google.com/forms/d/e/1FAIpQLSetDCDQF2bbTcMrpFwOQZY9NHz8MSND2Nk-dp5VLZuLoZ1ZPg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"target="blank">Google Forms</a>\n        </div>\n      </div>\n </section>\n  </div>\n  <div id="footnote">\n    <div>\n      <div id="copyright">Powered by code from the original <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank">Wordle</a></div>\n    </div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n'; */
+/*       '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  #privacy-policy,\n  #copyright {\n    text-align: left;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Hard Mode</div>\n          <div class="description">Any revealed hints must be used in subsequent guesses</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Dark Theme</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">High Contrast Mode</div>\n          <div class="description">For improved colour vision</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Feedback</div>\n        </div>\n        <div class="control">\n          <a href="mailto:dudelegame@gmail.com?subject=Feedback" title="dudelegame@gmail.com">Email</a> |\n          <a href="https://twitter.com/DudeleGame" target="blank" title="@DudeleGame">Twitter</a>\n          \n        </div>\n      </div>\n    </section>\n  <section> \n      <div class="setting">\n        <div class="text">\n          <div class="title">Dudele Archive</div>\n  <div class="description">Catch up in case you missed a daily word</div>\n       </div>\n        <div class="control">\n          <a href="https://dudele.github.io/archive/"target="blank">archive.dudele.in</a>\n        </div>\n      </div>\n </section><section> \n      <div class="setting">\n        <div class="text">\n          <div class="title">Submit Words</div>\n  <div class="description">Contribute to the Dudele Word list</div>\n       </div>\n        <div class="control">\n          <a href="https://docs.google.com/forms/d/e/1FAIpQLSetDCDQF2bbTcMrpFwOQZY9NHz8MSND2Nk-dp5VLZuLoZ1ZPg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link"target="blank">Google Forms</a>\n        </div>\n      </div>\n </section>\n  </div>\n  <div id="footnote">\n    <div>\n      <div id="copyright">Powered by code from the original <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank">Wordle</a></div>\n    </div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n'; */
 
 
 
@@ -1712,7 +1722,7 @@
                     ? void 0
                     : e.hash),
                 (this.shadowRoot.querySelector("#puzzle-number").textContent =
-                  "#".concat(this.gameApp.dayOffset - 312)),
+                  "#".concat(this.gameApp.dayOffset - 313)),
                 this.shadowRoot.addEventListener(
                   "game-switch-change",
                   function (e) {
@@ -1812,7 +1822,7 @@
     customElements.define("game-toast", Aa),
       (window.dataLayer = window.dataLayer || []),
       Ca("js", new Date());
-    Ca("config", "G-ZQTQT7VF9F", {
+    Ca("config", "G-3P12DDGW2F", {
       app_version:
         null === (Ea = window.dudele) || void 0 === Ea ? void 0 : Ea.hash,
       debug_mode: !1,
@@ -1883,11 +1893,11 @@
       as = "FAIL",
       ss = [
         "True Allegiance!",
-        "That’s Sick!",
-        "Just Dope!",
-        "Awesome, Right?",
-        "Close Shave!",
-        "Lucky Dude!",
+        "Now, that's Dope!",		
+        "Piece of Cake!",
+        "Aced it, Yeah?",
+        "Almost Screwed Up!",
+        "For real? Lucky Dude!",
       ],
       ts = (function (e) {
         r(t, e);
@@ -1915,7 +1925,7 @@
             (e.today = new Date());
           var o = za();
 
-          var currentGame = Ga(e.today) - 312;			  
+          var currentGame = Ga(e.today) - 313;			  
           if (window.localStorage.getItem("reload"+JSON.stringify(currentGame)) == null) {
             window.localStorage.setItem("reload"+JSON.stringify(currentGame), JSON.stringify(1));
             window.location.reload();
@@ -2802,11 +2812,20 @@
                 var e = this;
 				
                 var funFacts = [
-				"The Bald Eagle is a bird of prey found in North America. The Bald Eagle has been the national emblem of the United States since 1782 and a spiritual symbol for native people for far longer than that. These regal birds aren't really bald, but their white-feathered heads gleam in contrast to their chocolate-brown body and wings.", /*1 delhi*/           
+				"The Bald Eagle is a bird of prey found in North America. The Bald Eagle has been the national emblem of the United States since 1782 and a spiritual symbol for native people for far longer than that. These regal birds aren't really bald, but their white-feathered heads gleam in contrast to their chocolate-brown body and wings.", /*1 eagle*/           
+				"Madam C.J. Walker (born Sarah Breedlove) was an African American entrepreneur, philanthropist, and political and social activist. She is recorded as the first female self-made millionaire in America in the Guinness Book of World Records. Walker made her fortune by developing and marketing a line of cosmetics and hair care products for black women through the business she founded, Madam C. J. Walker Manufacturing Company.", /*2 madam*/ 
+				"According to the Immigration and Nationality Act (INA), an alien is an individual who does not have U.S. citizenship and is not a U.S. national. The INA defines a national of the United States as one who, while not a citizen, owes permanent allegiance to the United States.", /*3 alien*/ 
+				"The Grammy Award, or just Grammy, is an award presented by the Recording Academy to recognize 'Outstanding Achievement in the music industry' of the United States. Three US Presidents have won the award: Jimmy Carter (who has won the award three times), Barack Obama (who has won the award twice), and Bill Clinton, along with spoken recordings of John F. Kennedy and Franklin D. Roosevelt. Four U.S. Senators have won: Barack Obama, Everett Dirksen, Al Franken (won prior to his election), and Hillary Clinton (won when she was First Lady). First Lady Michelle Obama has also won the award after she was First Lady.", /*4 award*/ 
+				"Mount Rushmore one of the most famous of American landmarks didn’t get its name from the mountain it’s built on. In 1884, an attorney named Charles Edward Rushmore visited the Black Hills area to verify some legal titles. According to the National Parks site, Rushmore asked a local guide what the name of the mountain was. The guide replied, “We will name it now, and name it Rushmore.” And somehow, that name stuck. ", /*5 mount*/ 
+				"Ice cream in America in the 1700’s was rare and enjoyed only by the elite. The majority of Americans today, around 90%, have ice cream in their freezers, The average American eats 45.8 pints of ice cream a year.", /*6 cream*/ 
+				"Though the many health benefits of tomatoes are widely known today, a mere two hundred years ago, there was a widespread belief that they were poisonous. Thanks to mostly bogus book by a Surgeon named John Gerard, much of England and the USA remained tomato-shy for the next 200 years. Finally, in 1820, a man named Robert Johnson staged a “tomato trial” on the steps of a New Jersey courthouse. He ate a full basket of tomatoes and did not die.", /*7 trial*/ 
+				"The first first lady was Martha Washington, married to George Washington. Presidents John Tyler and Woodrow Wilson had two official first ladies; both remarried during their presidential tenures.", /*8 first*/ 
+				"The cinema of the United States, also known as Hollywood, has had a large effect on the global film industry since the early 20th century. The major film studios of Hollywood are the primary source of the most commercially successful and most ticket selling movies in the world.[10][11] Moreover, many of Hollywood's highest-grossing movies have generated more box-office revenue and ticket sales outside the United States than films made elsewhere. ", /*9 movie*/ 
+				"The Alaska Purchase was the United States' acquisition of Alaska from the Russian Empire. Alaska was formally transferred to the United States on October 18, 1867, through a treaty ratified by the United States Senate. The purchase added 586,412 sq mi (1,518,800 km2) of new territory to the United States for the cost of $7.2 million 1867 dollars, which is roughly 2 cents per acre.", /*10 money*/ 
                 ];	
 				//Changed to TRIVIA in Dudele
-                 if ((e.gameApp.gameStatus == "WIN" || e.gameApp.gameStatus == "FAIL") && funFacts.length > (e.gameApp.dayOffset - 313)) {
-                  var funFact = funFacts[e.gameApp.dayOffset - 313];  
+                 if ((e.gameApp.gameStatus == "WIN" || e.gameApp.gameStatus == "FAIL") && funFacts.length > (e.gameApp.dayOffset - 314)) {
+                  var funFact = funFacts[e.gameApp.dayOffset - 314];  
 
                   if (funFact != "") {
                     this.shadowRoot.appendChild(FFs.content.cloneNode(!0));
@@ -2892,7 +2911,7 @@
                               n = e.isWin,
                               r = JSON.parse(window.localStorage.getItem(j)),
                               i = JSON.parse(window.localStorage.getItem(S)),
-                              l = "Dudele ".concat(s - 312);
+                              l = "DUDELE ".concat(s - 313);
                             (l += " ".concat(n ? t : "X", "/").concat(6)),
                               o && (l += "*");
                             var d = "";
@@ -2905,17 +2924,17 @@
                                       switch (e) {
                                         case Ma:
                                           a = (function (e) {
-                                            return e ? "🔵" : "🔵";
+                                            return e ? "🟦" : "🟦";
                                           })(i);
                                           break;
                                         case Ia:
                                           a = (function (e) {
-                                            return e ? "🔴" : "🔴";
+                                            return e ? "🟥" : "🟥";
                                           })(i);
                                           break;
                                         case Oa:
                                           a = (function (e) {
-                                            return e ? "⚪" : "⚪";
+                                            return e ? "⬜" : "⬜";
                                           })(r);
                                       }
                                       d += a;
@@ -2946,7 +2965,8 @@
                       });
                 var announcement = document.createElement("div");
                 //announcement.innerHTML = '<center style="font-size:12px"><strong style="color: var(--orange);" >DUDELE </strong><strong style="color: var(--orange);">ARCHIVE</strong> and <strong style="color: var(--orange);" >SUBMIT </strong><strong style="color: var(--orange);">WORDS</strong> in <strong>SETTINGS</strong>.</center>\n <style> a {color: var(--green);} a:hover {color: var(--orange);}</style> <center style="font-size:12px", "acolor: #FF0000">Share your results with us <a href="https://www.twitter.com/DudeleGame" target="_blank"><strong>@DudeleGame</strong></a> on <strong> Twitter! </strong></center>';
-                announcement.innerHTML = '<center style="font-size:12px">Try a different puzzle. Play <a href="https://tenizgame.github.io/"target="_"><strong>TENIZ</strong></a> 🎾 \n <style> a {color: var(--orange);} a:hover {color: var(--green);}</style> <center style="font-size:12px", "acolor: #FF0000">Share your results with us <a href="https://www.twitter.com/DudeleGame" target="_blank"><strong>@DudeleGame</strong></a> on <strong> Twitter! </strong></center>';  
+                //announcement.innerHTML = '<center style="font-size:12px">Try a different puzzle. Play <a href="https://tenizgame.github.io/"target="_"><strong>TENIZ</strong></a> 🎾 \n <style> a {color: var(--orange);} a:hover {color: var(--green);}</style> <center style="font-size:12px", "acolor: #FF0000">Share your results with us <a href="https://www.twitter.com/DudeleGame" target="_blank"><strong>@DudeleGame</strong></a> on <strong> Twitter! </strong></center>';  
+				announcement.innerHTML = '<style> a {color: var(--orange);} a:hover {color: var(--green);}</style> <center style="font-size:12px", "acolor: #FF0000">Share your results with us <a href="https://www.twitter.com/DudeleGame" target="_blank"><strong>@DudeleGame</strong></a> on <strong> Twitter! </strong></center>';  
                 this.shadowRoot.appendChild(announcement); 					  
                 }				
               },
@@ -3012,7 +3032,7 @@
     customElements.define("game-switch", Ps);
     var $s = document.createElement("template");
     $s.innerHTML =
-	  '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .s {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  . {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Guess the <strong>DUDELE</strong> in 6 tries.</p>\n   <p>Each guess must be a valid word. Hit the enter button to submit.</p>\n      <p>After each guess, the colour of the tiles will change to show how close your guess was to the word.</p>\n <p>The answer will be a word/place/name/jargon related to the USA in some way, and an interesting trivia will be displayed after you play!</p>\n     <div class="s">\n        <p><strong>Examples</strong></p>\n        <div class="">\n          <div class="row">\n            <game-tile letter="s" evaluation="correct" reveal></game-tile>\n            <game-tile letter="t"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="r"></game-tile>\n          </div>\n          <p>The letter <strong>S</strong> is in the word and in the right spot.</p>\n        </div>\n        <div class="">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="l" evaluation="present" reveal></game-tile>\n            <game-tile letter="u"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="k"></game-tile>\n          </div>\n          <p>The letter <strong>L</strong> is in the word but in the wrong spot.</p>\n        </div>\n        <div class="">\n          <div class="row">\n            <game-tile letter="m"></game-tile>\n            <game-tile letter="o"></game-tile>\n            <game-tile letter="n"></game-tile>\n            <game-tile letter="e" evaluation="absent" reveal></game-tile>\n            <game-tile letter="y"></game-tile>\n          </div>\n          <p>The letter <strong>E</strong> is not in the word in any spot.</p>\n        </div>\n      </div>\n      <p><center>A new <strong>DUDELE</strong> will be available each day!</center></p></div>\n  </section>\n';
+	  '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .s {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  . {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Guess the <strong>DUDELE</strong> in 6 tries. <br><br>Words can be of <strong>Varying Lengths</strong> each day. </p>\n   <p>Each guess must be a valid word. Hit the enter button to submit.</p>\n      <p>After each guess, the colour of the tiles will change to show how close your guess was to the word.</p>\n <p>The answer will be a Word/Place/Name/Americanism related to the USA in some way, and an interesting <strong>TRIVIA</strong> will be displayed after you play!</p>\n     <div class="s">\n        <p><strong>Examples</strong></p>\n        <div class="">\n          <div class="row">\n            <game-tile letter="s" evaluation="correct" reveal></game-tile>\n            <game-tile letter="t"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="r"></game-tile>\n          </div>\n          <p>The letter <strong>S</strong> is in the word and in the right spot.</p>\n        </div>\n        <div class="">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="l" evaluation="present" reveal></game-tile>\n            <game-tile letter="u"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="k"></game-tile>\n          </div>\n          <p>The letter <strong>L</strong> is in the word but in the wrong spot.</p>\n        </div>\n        <div class="">\n          <div class="row">\n            <game-tile letter="m"></game-tile>\n            <game-tile letter="o"></game-tile>\n            <game-tile letter="n"></game-tile>\n            <game-tile letter="e" evaluation="absent" reveal></game-tile>\n            <game-tile letter="y"></game-tile>\n          </div>\n          <p>The letter <strong>E</strong> is not in the word in any spot.</p>\n        </div>\n      </div>\n      <p><center>A new <strong>DUDELE</strong> will be available each day! <strong><br>Limited Time Only</strong>. </center></p></div>\n  </section>\n';
     var Hs = (function (e) {
       r(t, e);
       var a = h(t);
