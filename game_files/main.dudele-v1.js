@@ -673,7 +673,11 @@
         "trial",
         "first",
         "movie",
-        "money",  /*DUDELE Dictionary ends*/      
+        "money",      
+		"poker",
+		"clown ",
+		"motto",
+		"night", /*DUDELE Dictionary ends*/ 		
         "taxes", 
         "train", 
         "music", 
@@ -2822,6 +2826,10 @@
 				"The first first lady was Martha Washington, married to George Washington. Presidents John Tyler and Woodrow Wilson had two official first ladies; both remarried during their presidential tenures.", /*8 first*/ 
 				"The cinema of the United States, also known as Hollywood, has had a large effect on the global film industry since the early 20th century. The major film studios of Hollywood are the primary source of the most commercially successful and most ticket selling movies in the world.[10][11] Moreover, many of Hollywood's highest-grossing movies have generated more box-office revenue and ticket sales outside the United States than films made elsewhere. ", /*9 movie*/ 
 				"The Alaska Purchase was the United States' acquisition of Alaska from the Russian Empire. Alaska was formally transferred to the United States on October 18, 1867, through a treaty ratified by the United States Senate. The purchase added 586,412 sq mi (1,518,800 km2) of new territory to the United States for the cost of $7.2 million 1867 dollars, which is roughly 2 cents per acre.", /*10 money*/ 
+				"Texas hold 'em (also known as Texas holdem, hold 'em, and holdem) is one of the most popular variants of the card game of Poker. Although little is known about the invention of Texas hold 'em, the Texas Legislature officially recognizes Robstown, Texas, as the game's birthplace, dating it to the early 20th century. After the game spread throughout Texas, hold 'em was introduced to Las Vegas in 1963 at the California Club by Corky McCorquodale.", /*11 poker*/ 
+				"The 2016 Clown sightings were reports of people disguised as evil clowns in incongruous settings, such as near forests and schools. The sightings were first reported in Green Bay, Wisconsin, in what turned out to be a marketing stunt for a horror film. The phenomenon later spread to many other cities in the US. ", /*12 clown */ 
+				"The modern motto of the United States of America, as established in a 1956 law signed by President Dwight D. Eisenhower, is 'In God we trust'. The phrase first appeared on U.S. coins in 1864.", /*13 motto*/ 
+				"No city in the United States has a wider variety of nightlife options than New York. From trendy cocktail lounges in SoHo and rooftop bars in midtown Manhattan to pub crawls in the East Village and beer gardens in Brooklyn, there are countless ways to enjoy a night out in the Big Apple.", /*14 night*/ 				
                 ];	
 				//Changed to TRIVIA in Dudele
                  if ((e.gameApp.gameStatus == "WIN" || e.gameApp.gameStatus == "FAIL") && funFacts.length > (e.gameApp.dayOffset - 314)) {
