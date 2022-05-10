@@ -675,7 +675,7 @@
         "movie",
         "money",      
 		"poker",
-		"clown ",
+		"clown",
 		"motto",
 		"night", /*DUDELE Dictionary ends*/ 		
         "taxes", 
