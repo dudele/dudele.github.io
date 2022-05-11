@@ -677,7 +677,14 @@
 		"poker",
 		"clown",
 		"motto",
-		"night", /*DUDELE Dictionary ends*/ 		
+		"night", 
+		"power",
+		"state",
+		"river",
+		"basin",
+		"nobel",
+		"gifts",
+		"diary", /*DUDELE Dictionary ends*/ 
         "taxes", 
         "train", 
         "music", 
@@ -2830,6 +2837,13 @@
 				"The 2016 Clown sightings were reports of people disguised as evil clowns in incongruous settings, such as near forests and schools. The sightings were first reported in Green Bay, Wisconsin, in what turned out to be a marketing stunt for a horror film. The phenomenon later spread to many other cities in the US. ", /*12 clown */ 
 				"The modern motto of the United States of America, as established in a 1956 law signed by President Dwight D. Eisenhower, is 'In God we trust'. The phrase first appeared on U.S. coins in 1864.", /*13 motto*/ 
 				"No city in the United States has a wider variety of nightlife options than New York. From trendy cocktail lounges in SoHo and rooftop bars in midtown Manhattan to pub crawls in the East Village and beer gardens in Brooklyn, there are countless ways to enjoy a night out in the Big Apple.", /*14 night*/ 				
+				"According to the 2020 survey (released in 2021), the United States is the world's most powerful country. The United States has the world's largest economy, with a GDP of $20.93 trillion in 2020 and the most massive military budget of $778 billion in 2020.", /*15 power*/ 
+				"Ohio was the 17th state added to the United States… or was it? Though Congress approved Ohio’s request for statehood in 1803, they forgot to officially ratify the state constitution. It wasn’t until 150 years later that Ohio representative George H. Bender made a move to make his state official.", /*16 state*/ 
+				"The Missouri River is the longest river in North America. Rising in the Rocky Mountains of the Eastern Centennial Mountains of Southwestern Montana, the Missouri flows east and south for 2,341 miles (3,767 km) before entering the Mississippi River north of St. Louis, Missouri", /*17 river*/ 
+				"Badwater Basin is an endorheic basin in Death Valley National Park, Death Valley, Inyo County, California, noted as the lowest point in North America and the United States, with a depth of 282 ft below sea level.", /*18 basin*/ 
+				"Theodore Roosevelt was the first American Nobel Peace laureate when he won the prize on December 10, 1906. He received the award for the role he played in the Treaty of Portsmouth that brought the Russo-Japanese War to an end.", /*19 nobel*/ 
+				"The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel.", /*20 gifts*/ 
+				"The Afghan War documents leak, also called the Afghan War Diary, is one of the biggest document leaks in US military history and is the disclosure of a collection of internal U.S. military logs of the War in Afghanistan, which were published by WikiLeaks on 25 July 2010. The logs consist of over 91,000 Afghan War documents, covering the period between January 2004 and December 2009.", /*21 diary*/ 				
                 ];	
 				//Changed to TRIVIA in Dudele
                  if ((e.gameApp.gameStatus == "WIN" || e.gameApp.gameStatus == "FAIL") && funFacts.length > (e.gameApp.dayOffset - 314)) {
