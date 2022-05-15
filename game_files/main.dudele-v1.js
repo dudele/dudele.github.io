@@ -663,8 +663,8 @@
         "space", 
         "horse", 
         "foggy",
-	"dummy",
-	"eagle", /*DUDELE Dictionary begins*/
+		"dummy",
+		"eagle", /*DUDELE Dictionary begins*/
         "madam",
         "alien",
         "award",
@@ -674,17 +674,42 @@
         "first",
         "movie",
         "money",      
-	"poker",
-	"clown",
-	"motto",
-	"night", 
-	"power",
-	"state",
-	"river",
-	"basin",
-	"nobel",
-	"gifts",
-	"diary", /*DUDELE Dictionary ends*/ 
+		"poker",
+		"clown",
+		"motto",
+		"night", 
+		"power",
+		"state",
+		"river",
+		"basin",
+		"nobel",
+		"gifts",
+		"diary", 
+		"smoke",
+		"chain",
+		"plane",
+		"pizza",
+		"candy",
+		"coach",
+		"white",
+		"tower",
+		"lunar",
+		"pearl",
+		"birth",
+		"meter",
+		"crime",
+		"death",
+		"great",
+		"witch",
+		"actor",
+		"share",
+		"creek",
+		"coast",
+		"windy",
+		"court",
+		"civil",
+		"marry",
+		"party", /*DUDELE Dictionary ends*/ 
         "taxes", 
         "train", 
         "music", 
@@ -2843,8 +2868,33 @@
 				"Badwater Basin is an endorheic basin in Death Valley National Park, Death Valley, Inyo County, California, noted as the lowest point in North America and the United States, with a depth of 282 ft below sea level.", /*18 basin*/ 
 				"Theodore Roosevelt was the first American Nobel Peace laureate when he won the prize on December 10, 1906. He received the award for the role he played in the Treaty of Portsmouth that brought the Russo-Japanese War to an end.", /*19 nobel*/ 
 				"The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel.", /*20 gifts*/ 
-				"The Afghan War documents leak, also called the Afghan War Diary, is one of the biggest document leaks in US military history and is the disclosure of a collection of internal U.S. military logs of the War in Afghanistan, which were published by WikiLeaks on 25 July 2010. The logs consist of over 91,000 Afghan War documents, covering the period between January 2004 and December 2009.", /*21 diary*/ 				
-                ];	
+				"The Afghan War documents leak, also called the Afghan War Diary, is one of the biggest document leaks in US military history and is the disclosure of a collection of internal U.S. military logs of the War in Afghanistan, which were published by WikiLeaks on 25 July 2010. The logs consist of over 91,000 Afghan War documents, covering the period between January 2004 and December 2009.", /*21 diary*/ 				  
+				"The last televised cigarette ad ran at 11:50 P.M. during The Johnny Carson Show on Jan. 1, 1971. Alarming health studies had emerged as early as 1939 that linked cigarette smoking to higher incidences of cancer and heart disease and, by the end of the 1950s, all states had laws prohibiting the sale of cigarettes to minors.", /*22 smoke*/ 
+				"1 out of every 8 American workers have worked for the McDonald’s chain, including Amazon.com founder Jeff Bezos and pop singer Pink", /*23 chain*/ 
+				"A staggering number byt itself, more than 5000 commercial airplanes find their way across the US at any given time of the day.", /*24 plane*/ 
+				"Did you know that US Citizens consume around a hundred acres of pizza every day?!", /*25 pizza*/ 
+				"Hershey's was founded in 1894 and today is the world's largest chocolate manufacturer. Until 1970, Hershey did not advertise. The company was so well known it was THE chocolate candy. Hershey's Kisses were introduced in 1907. Each one was hand wrapped until 1924 when the ribbon was added. Today over 80 million Kisses are made daily.", /*26 candy*/ 
+				"The role of a  Football Coach is the highest paid public position in over half of the United States.", /*27 coach*/ 
+				"George Washington was the only president who did not live in the White House. He chose both the site and the architect of the White House, but the building was not completed by the end of his second term in 1797. John Adams was the first president to live in the White House.", /*28 white*/ 
+				"The original World Trade Center, or the Twin Towers, was a large complex of seven buildings in Lower Manhattan, New York City, United States. It featured landmark twin towers, which opened on April 4, 1973. The Towers were a symbol to America, just like the eagle, or the Liberty Bell.", /*29 tower*/ 
+				"Neil Alden Armstrong (August 5, 1930 – August 25, 2012) was an American astronaut, aeronautical engineer, and the first person to walk on the Moon. He was also a naval aviator, test pilot, and university professor. Armstrong was born and raised in Wapakoneta, Ohio.", /*30 lunar*/ 
+				"The attack on Pearl Harbor was a surprise military strike by the Imperial Japanese Navy Air Service upon the United States against the naval base at Pearl Harbor in Honolulu, Territory of Hawaii, just before 08:00 a.m., on Sunday, December 7, 1941.", /*31 pearl*/ 
+				"The first president born in a hospital Jimmy Carter, our 39th president, was the first to be born in a hospital. He was born in 1924. ", /*32 birth*/ 
+				"Despite what you might believe, the USA is not the only country that doesn’t use the metric system. There are three: America, Myanmar, and Liberia. Liberia, located in western Africa, commonly uses United States customary units. Myanmar (formerly Burma), located in southeast Asia, uses the traditional system of Burmese measurements. ", /*33 meter*/ 
+				"Al Capone, one of the most famous American criminals of all time, spent most of the 1920s smuggling illegal alcohol and murdering his enemies. But the crime that finally got him caught and sent to prison in 1931 was… tax evasion. When a 1927 Supreme Court ruling declared that bootleggers had to pay income tax, Capone’s downfall began. ", /*34 crime*/ 
+				"Death Valley is a desert valley in Eastern California, in the northern Mojave Desert, bordering the Great Basin Desert. During summer, it is one of the hottest places on Earth, along with deserts in the Middle East and the Sahara.", /*35 death*/ 
+				"The Great Depression was a severe worldwide economic depression between 1929 and 1939 that began after a major fall in stock prices in the United States. The economic contagion began around September 4, 1929, and became known worldwide on Black Tuesday, the stock market crash of October 29, 1929. The economic shock transmitted across the world, impacting countries to varying degrees, with most countries experiencing the Great Depression from 1929.", /*36 great*/ 
+				"The Salem Witch Trials of 1692 were a dark time in American history. More than 200 people were accused of practicing witchcraft and 20 were killed during the hysteria.", /*37 witch*/ 
+				"Walter Elias Disney was an American animator, film producer and entrepreneur. The records for most Oscars ever for a single person are actually held not by actors but behind-the-scenes talents of various stripes. Animator and producer Walt Disney holds the all-time record with 22 Oscars.", /*38 actor*/ 
+				"In the continental United States, the country shares maritime borders with Cuba and the Bahamas, while sharing maritime borders with the United Kingdom in the Virgin Islands, the Dominican Republic and Venezuela in Puerto Rico, and Samoa in American Samoa. West of Puerto Rico, the Mona Passage serves as maritime boundary with the Dominican Republic, and the US shares a border with the United Kingdom east of the US Virgin Islands.", /*39 share*/ 
+				"Colonial Creek Falls is the tallest waterfall in the continental United States. In a horizontal traverse of more than 4,200 feet, it falls 2,568 feet vertically in 13 distinct drops, with an average incline of 65 degrees.", /*40 creek*/ 
+				"Alaska has the longest coastline in the USA. The Alaskan coastline stretches 6,640 miles (10,690 km), a distance greater than all the other states’ coastlines combined.  And if you add in the Alaskan islands, it boasts 33,904 miles (54,563 km) of shoreline!", /*41 coast*/ 
+				"Chicago is called the Windy City. The origins of Chicago’s famous nickname are not entirely clear. The most obvious explanation is that it comes from the frigid breezes that blow off Lake Michigan and sweep through the city’s streets.", /*42 windy*/ 
+				"The Supreme Court of the United States is the highest court in the federal judiciary of the United States. It has ultimate appellate jurisdiction over all U.S. federal court cases, as well as over state court cases that involve a point of federal law. ", /*43 court*/ 
+				"The American Civil War was a civil war in the United States between the Union and the Confederacy. The central cause of the war was the status of slavery, especially the expansion of slavery into territories acquired as a result of the Louisiana Purchase and the Mexican–American War. On the eve of the Civil War in 1860, four million of the 32 million Americans were enslaved black people, almost all in the South.", /*44 civil*/ 
+				"The only U.S. president to never marry James Buchanan, the 15th president, remained unmarried not only throughout his entire presidency but also throughout his entire life, the only U.S. president to do either of those things. His niece, Harriet Lane Johnston, served as his first lady. ", /*45 marry*/ 
+				"The Boston Tea Party was an American political and mercantile protest by the Sons of Liberty in Boston, Massachusetts, on December 16, 1773. The target was the Tea Act of May 10, 1773, which allowed the British East India Company to sell tea from China in American colonies without paying taxes apart from those imposed by the Townshend Acts.", /*46 party*/ 	
+				];	
 				//Changed to TRIVIA in Dudele
                  if ((e.gameApp.gameStatus == "WIN" || e.gameApp.gameStatus == "FAIL") && funFacts.length > (e.gameApp.dayOffset - 314)) {
                   var funFact = funFacts[e.gameApp.dayOffset - 314];  
